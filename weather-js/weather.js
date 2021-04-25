@@ -1,6 +1,6 @@
 class Weather {
     constructor() {
-        this.apiKey = '49a6729f58822c2c8f7d5343256332a8';
+        this.apiKey = 'YOUR_API_KEY';
         this.city = 'kathmandu';
     }
 
