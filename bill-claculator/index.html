@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" integrity="sha512-EZLkOqwILORob+p0BXZc+Vm3RgJBOe1Iq/0fiI7r/wJgzOFZMlsqTa29UEl6v6U6gsV4uIpsNZoV32YZqrCRCQ==" crossorigin="anonymous" />
+    <style>
+        .success, .error {
+            padding:5px;
+            margin:5px 0 15px 0;
+            color: white;
+        }
+        .success {
+            background: teal;
+        }
+        .error {
+            background: crimson;
+        }
+    </style>
+    <title>Wang-Min Spice Center</title>
+</head>
+<body>
+    <div class="container" id="menu">
+        <h2>Spice List</h2>
+        <table id="menu-items" class="u-full-width">
+            <thead>
+                <tr>
+                    <th>Index</th>
+                    <th>Items</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr id="1">
+                    <td>1</td>
+                    <td>Saffron</td>
+                    <td id="price">$80.00/kg</td>
+                </tr>
+                <tr id="2">
+                    <td>2</td>
+                    <td>Pepper</td>
+                    <td id="price">$2.00/kg</td>
+                </tr>
+                <tr id="3">
+                    <td>3</td>
+                    <td>Tumeric</td>
+                    <td id="price">$5.00/kg</td>
+                </tr>
+                <tr id="4">
+                    <td>4</td>
+                    <td>Coriander</td>
+                    <td id="price">$4.00/kg</td>
+                </tr>
+                <tr id="5">
+                    <td>5</td>
+                    <td>Garlic Powder</td>
+                    <td id="price">$8.00/kg</td>
+                </tr>
+            </tbody>
+        </table>
+        <div id="add-item">
+            <label for="item">Choose Item</label>
+            <input type="number" id="item" placeholder="Select Item Number">
+            <button id="cart">Add To Cart</button>
+        </div>
+        <div class="selected-items">
+            <h4>Cart</h4>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Index</th>
+                        <th>Item</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody id="purchased-items">
+    
+                </tbody>
+            </table>
+        </div>
+        <div id="show-total">
+            <button id="total-button">Show Total</button>
+        </div>
+        <div id="check-out-section">
+            <button id="check-out">Check Out</button>
+            <!-- <input type="text" disabled> -->
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
